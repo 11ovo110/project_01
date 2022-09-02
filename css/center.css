@@ -1,0 +1,302 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.center-wrapper {
+  display: flex;
+  width: 1240px;
+  margin: 30px auto 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.center-wrapper .aside {
+  width: 227px;
+  background-color: #fff;
+}
+
+.center-wrapper .main {
+  width: 999px;
+}
+
+.center-wrapper .user-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 47px 0 32px;
+}
+
+.user-meta img {
+  width: 85px;
+  height: 85px;
+}
+
+.user-meta h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+  margin: 14px 0 12px;
+}
+
+.user-meta p {
+  width: 93px;
+  height: 26px;
+  background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+  border-radius: 13px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.user-meta p i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 16px;
+  background: url(../images/vip_gold.png) no-repeat;
+  background-size: 15px 16px;
+  margin: -4px 2px 0 4px;
+}
+
+.center-wrapper .user-manage {
+  border-top: 1px solid #f4f4f4;
+  padding: 32px 0 20px 52px;
+}
+
+.center-wrapper .user-manage h4 {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.center-wrapper .user-manage .links a {
+  position: relative;
+  display: block;
+  color: #666666;
+  padding: 10px 0;
+}
+
+.center-wrapper .user-manage .links a::before {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  border-radius: 50%;
+  background-color: #5eb69c;
+}
+
+.center-wrapper .user-manage .links a:hover {
+  color: #5cb99e;
+}
+
+.center-wrapper .user-manage .links a:hover::before {
+  display: block;
+}
+
+.overview {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 18px;
+}
+
+.overview .item {
+  display: flex;
+  flex: 1;
+  height: 91px;
+  justify-content: space-evenly;
+  padding-top: 26px;
+}
+
+.overview .item:first-child {
+  border-right: 1px solid #f4f4f4;
+}
+
+.overview .item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview .item a span {
+  width: 25px;
+  height: 23px;
+  background: url(../images/vip.png) no-repeat 0 0/25px 23px;
+  margin-bottom: 16px;
+}
+
+.overview .item a:nth-child(2) span {
+  background-image: url(../images/safe.png);
+}
+
+.overview .item a:nth-child(3) span {
+  width: 18px;
+  height: 23px;
+  background-image: url(../images/address.png);
+  background-size: 18px 23px;
+}
+
+.overview .item p {
+  font-size: 25px;
+  color: #e05e30;
+  margin-bottom: 4px;
+}
+
+.center-wrapper .panel {
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.center-wrapper .panel .panel-header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-wrapper .panel .panel-header h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.center-wrapper .panel .panel-header a {
+  font-size: 16px;
+  color: #999;
+  margin-right: 10px;
+}
+.center-wrapper .orders {
+  /* padding-bottom: 20px; */
+  margin-bottom: 20px;
+}
+.center-wrapper .orders li {
+  display: flex;
+  height: 137px;
+  border: 1px solid #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.center-wrapper .orders li .goods {
+  flex: 1;
+  display: flex;
+  padding-left: 14px;
+  padding-top: 17px;
+}
+.center-wrapper .goods .goods-pic {
+  display: flex;
+  width: 107px;
+  height: 107px;
+}
+.center-wrapper .goods .goods-pic img {
+  width: 100%;
+  height: 100%;
+}
+.center-wrapper .goods .goods-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+}
+.center-wrapper .goods .goods-detail h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  padding-bottom: 5px;
+}
+.center-wrapper .goods .goods-detail p {
+  font-size: 14px;
+  color: #999999;
+}
+.center-wrapper .goods .goods-pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.center-wrapper .goods .goods-pay p {
+  font-size: 14px;
+  color: #e05e30;
+}
+.center-wrapper .goods .goods-pay a {
+  font-size: 14px;
+  color: #999;
+}
+.center-wrapper .orders li .payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+.center-wrapper .payment p:first-child {
+  color: #9a2e1f;
+}
+.center-wrapper .payment p {
+  font-size: 14px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.center-wrapper .orders li .action {
+  width: 180px;
+}
+.center-wrapper .action {
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.center-wrapper .action a:first-child {
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.center-wrapper .action a {
+  font-size: 14px;
+  color: #333;
+}
+.center-wrapper .action a:nth-child(2) {
+  margin: 14px 0 10px 0;
+}
+.panel .collect ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  flex-wrap: wrap;
+}
+.panel .collect li {
+  width: 190px;
+}
+.panel .collect li p {
+  font-size: 16px;
+  color: #333333;
+  padding-bottom: 18px;
+}
+.panel .collect li p:last-child {
+  color: #9a2e1f;
+}
+.panel .collect li p:last-child span {
+  font-size: 22px;
+}
+.panel .collect .collect-pic {
+  width: 160px;
+  height: 160px;
+}
+.panel .collect .collect-pic img {
+  width: 100%;
+  height: 100%;
+}
